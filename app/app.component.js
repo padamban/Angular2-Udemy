@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./test.component"], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,12 @@ System.register(['angular2/core', "./test.component"], function(exports_1, conte
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, test_component_1;
+    var core_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (test_component_1_1) {
-                test_component_1 = test_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -27,8 +24,7 @@ System.register(['angular2/core', "./test.component"], function(exports_1, conte
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <h1>App (root) component</h1>\n        <p>Here comes the child component...</p>\n        <my-test></my-test>\n        ",
-                        directives: [test_component_1.TestComponent],
+                        template: "\n        <h1>App (root) component</h1>\n        <p>Here comes the child component...</p>\n        "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
@@ -39,4 +35,4 @@ System.register(['angular2/core', "./test.component"], function(exports_1, conte
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFZQTtnQkFBQTtnQkFFQSxDQUFDO2dCQVhEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLFFBQVE7d0JBQ2xCLFFBQVEsRUFBRSxrSUFJTDt3QkFDTCxVQUFVLEVBQUUsQ0FBQyw4QkFBYSxDQUFDO3FCQUM5QixDQUFDOztnQ0FBQTtnQkFHRixtQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdUNBRUMsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ2FuZ3VsYXIyL2NvcmUnO1xuaW1wb3J0IHtUZXN0Q29tcG9uZW50fSBmcm9tIFwiLi90ZXN0LmNvbXBvbmVudFwiO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ215LWFwcCcsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPGgxPkFwcCAocm9vdCkgY29tcG9uZW50PC9oMT5cbiAgICAgICAgPHA+SGVyZSBjb21lcyB0aGUgY2hpbGQgY29tcG9uZW50Li4uPC9wPlxuICAgICAgICA8bXktdGVzdD48L215LXRlc3Q+XG4gICAgICAgIGAsXG4gICAgZGlyZWN0aXZlczogW1Rlc3RDb21wb25lbnRdLCAvLyBmb3IgZGVjbGFyaW5nIGFsbCBjb3N0dW0gY29tcG9uZW5ldHNcbn0pXG5leHBvcnQgY2xhc3MgQXBwQ29tcG9uZW50IHtcblxufSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFTQTtnQkFBQTtnQkFFQSxDQUFDO2dCQVREO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLFFBQVE7d0JBQ2xCLFFBQVEsRUFBRSxxR0FHTDtxQkFDUixDQUFDOztnQ0FBQTtnQkFHRixtQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdUNBRUMsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ2FuZ3VsYXIyL2NvcmUnO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ215LWFwcCcsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPGgxPkFwcCAocm9vdCkgY29tcG9uZW50PC9oMT5cbiAgICAgICAgPHA+SGVyZSBjb21lcyB0aGUgY2hpbGQgY29tcG9uZW50Li4uPC9wPlxuICAgICAgICBgXG59KVxuZXhwb3J0IGNsYXNzIEFwcENvbXBvbmVudCB7XG5cbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
