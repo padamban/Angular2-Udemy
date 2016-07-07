@@ -1,0 +1,22 @@
+.setup, .puzzle{
+    padding: 16px;
+    margin-bottom: 32px;
+}
+.setup{
+    border: 1px solid #777;
+    background-color: #ccc;
+}
+
+.puzzle{
+    border: 1px solid #f54747;
+    background-color: #fc8c84;
+}
+
+.puzzle.solved{
+    border: 1px solid green;
+    background-color: #ccffda;
+}
+
+.name {
+    font-weight: bold;
+}
