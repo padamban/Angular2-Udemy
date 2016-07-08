@@ -8,16 +8,32 @@ import {PropertyBindingComponent} from './property-binding.component';
         <section class="parent">
             <h1>App (root) component</h1>
             <p>Here comes the child component...</p><br>
+            
+                        
+            <!--DATA GOING TO CHILD-->
             <input type="text" [(ngModel)]="varName">
             <input type="text" [(ngModel)]="varAge">
             <input type="text" [(ngModel)]="varGender">
+            
+            
             <section class="child">
                 <my-propertyBinding 
                     [propName]="varName"
                     [propAge]="varAge"
                     [propGender]="varGender"
+                    
+                    
+                    (likeChangedEE)="varLike=$event"
+                     
+                     
                 ></my-propertyBinding>
             </section>
+            
+            
+                      
+            <!--DATA COMING FROM CHILD-->
+            <p>No I don't like {{varLike}}</p>
+            
         </section>
         `,
     styles:[
@@ -41,4 +57,8 @@ export class AppComponent {
     varAge = '34';
     varGender = 'male';
 
+    varLike = '...';
+//    
 }
+
+
