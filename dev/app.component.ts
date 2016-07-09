@@ -1,11 +1,13 @@
 import {Component} from 'angular2/core';
+import {AttributeDirectivesComponent} from './attribute-directives.component'
 
 @Component({
     selector: 'my-app',
     template: `
-        <h1>App (root) component</h1>
-        <p>Here comes the child component...</p>
-        `
+            HELLO
+            <my-attribute-directives></my-attribute-directives>
+        `,
+    directives: [AttributeDirectivesComponent]
 })
 export class AppComponent {
 
