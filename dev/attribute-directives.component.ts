@@ -18,13 +18,7 @@ import {HighlightDirective} from './highlight.directive';
         </div>  
         <br><br><br>
     `,
-    styles: [`
-    
-    
-    `],
-    directives: [HighlightDirective],
-    inputs: [],
-    outputs: []
+    directives:[HighlightDirective]
 })
 
 export class AttributeDirectivesComponent

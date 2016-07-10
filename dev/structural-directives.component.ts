@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {UnlessDirective} from './unless.directive';
 
 
 @Component ({
@@ -34,7 +35,10 @@ import {Component} from 'angular2/core';
                 </ul>
             </div>
             
+            
+            
             <br><br>
+            
             
             <h4>[ngSwitch]</h4>
             <!--It uses squere brakets because it doesnt changes the DOM, ... the * signals change in the DOM-->
@@ -51,13 +55,26 @@ import {Component} from 'angular2/core';
             </div>
             
             
-    
+            <br><br>
+            
+            
+            <h4>Making a custom directive: *myUnless</h4>
+            <div >
+                 Enter true or false: 
+                 <input type="text" #condition (keyup)="0">
+            </div>
+            <div *myUnless="condition.value != 'false'">
+                 Showed because it is FALSE. 
+                 
+            </div>   
+            
+        </section>
+        
+        
     `,
-    styles: [``],
-    directives: [],
-    inputs: [],
-    outputs: []
+    directives: [UnlessDirective]
 })
+
 
 export class StructuralDirectivesComponent
 {
