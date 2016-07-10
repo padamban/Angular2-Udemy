@@ -1,11 +1,17 @@
 import {Component} from 'angular2/core';
+import {ShoppingListComponent} from './shopping-list.component';
 
 @Component({
     selector: 'my-app',
     template: `
-        <h1>App (root) component</h1>
-        <p>Here comes the child component...</p>
-        `
+        <header>
+            <div class="brand">Shopping List</div>
+        </header>
+        <div class="main">
+            <my-shopping-list></my-shopping-list>
+        </div>
+        `,
+    directives:[ShoppingListComponent]
 })
 export class AppComponent {
 
