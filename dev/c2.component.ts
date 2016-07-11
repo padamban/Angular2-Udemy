@@ -1,6 +1,6 @@
 
 import {Component} from 'angular2/core';
-import {Router} from "angular2/router";
+import {Router, CanDeactivate, ComponentInstruction} from "angular2/router";
 
 @Component ({
     selector: "my-C2",
@@ -10,10 +10,15 @@ import {Router} from "angular2/router";
     `
 })
 
-export class C2Component {
+export class C2Component implements CanDeactivate{
     constructor(private _router:Router){}
 
     onNavigate(){
         this._router.navigate(['Comp1', {source: 'Component 2'}]);
+    }
+
+
+    routerCanDeactivate(nextInstruction: ComponentInstruction, prevInstruction:ComponentInstruction):any {
+        return confirm("Sure?");
     }
 }
