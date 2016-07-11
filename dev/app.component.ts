@@ -10,8 +10,8 @@ import {C2Component} from "./c2.component";
                 <ul>
                     <li><a [routerLink]="['Comp1', {source:'AppComponent', optional: 'This is optional'}]">Component 1</a></li>
                     <li><a [routerLink]="['Comp2']">Component 2</a></li>
-</ul>
-</header>
+                </ul>
+            </header>
             <!-- it can be only one router outlets in one file-->
            <router-outlet></router-outlet>
         `,
@@ -19,8 +19,8 @@ import {C2Component} from "./c2.component";
 })
 
 @RouteConfig([
-                    // parameter
-    {path:'/component-1/:source', name:'Comp1', component: C1Component},
+                    // parameter,  /... for childs
+    {path:'/component-1/:source/...', name:'Comp1', component: C1Component},
     {path:'/component-2', name:'Comp2', component: C2Component}
 ])
 
