@@ -1,11 +1,12 @@
 import {Component} from 'angular2/core';
+import {TemplateDrivenFormComponent} from './template-driven-form.component'
 
 @Component({
     selector: 'my-app',
     template: `
-        <h1>App (root) component</h1>
-        <p>Here comes the child component...</p>
-        `
+        <my-template-driven></my-template-driven>
+        `,
+    directives: [TemplateDrivenFormComponent],
 })
 export class AppComponent {
 
