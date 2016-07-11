@@ -8,6 +8,9 @@ import {RouteParams} from "angular2/router";
         <h4>Hello C1</h4>
         <div>
             Came from: {{source}}
+        </div> 
+        <div>
+            Optional parameter: {{optional}}
         </div>
 
     `
@@ -15,10 +18,12 @@ import {RouteParams} from "angular2/router";
 
 export class C1Component implements OnInit{
     source:string;
+    optional:string;
 
     constructor(private _routeParams: RouteParams) {}
 
     ngOnInit():any{
         this.source = this._routeParams.get('source');
+        this.optional = this._routeParams.get('optional');
     }
 }

@@ -8,7 +8,7 @@ import {C2Component} from "./c2.component";
     template: `
             <header>
                 <ul>
-                    <li><a [routerLink]="['Comp1', {source:'AppComponent'}]">Component 1</a></li>
+                    <li><a [routerLink]="['Comp1', {source:'AppComponent', optional: 'This is optional'}]">Component 1</a></li>
                     <li><a [routerLink]="['Comp2']">Component 2</a></li>
 </ul>
 </header>
