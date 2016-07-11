@@ -8,7 +8,7 @@ import {C2Component} from "./c2.component";
     template: `
             <header>
                 <ul>
-                    <li><a [routerLink]="['Comp1']">Component 1</a></li>
+                    <li><a [routerLink]="['Comp1', {source:'AppComponent'}]">Component 1</a></li>
                     <li><a [routerLink]="['Comp2']">Component 2</a></li>
 </ul>
 </header>
@@ -19,7 +19,8 @@ import {C2Component} from "./c2.component";
 })
 
 @RouteConfig([
-    {path:'/component-1', name:'Comp1', component: C1Component, useAsDefault:true},
+                    // parameter
+    {path:'/component-1/:source', name:'Comp1', component: C1Component},
     {path:'/component-2', name:'Comp2', component: C2Component}
 ])
 
