@@ -3,7 +3,7 @@ import {Component} from "angular2/core"
 @Component({
     selector: "my-template-driven",
     template:`
-        <h2> Sign-up form </h2>
+        <h4> Sign-up form (template driven)</h4>
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
             
             <label for="mail">Mail</label> <br>
